@@ -17,10 +17,10 @@ passport.use(
           username: username
         }
       }).then(dbUser => {
-        // If there's no user with the given email
+        // If there's no user with the given username
         if (!dbUser) {
           return done(null, false, {
-            message: "Incorrect email."
+            message: "Incorrect username."
           });
         }
         // If there is a user with the given email, but the password the user gives us is incorrect
