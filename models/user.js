@@ -3,13 +3,13 @@ const bcrypt = require("bcryptjs");
 // Creating our User model
 module.exports = function(sequelize, DataTypes) {
   const User = sequelize.define("User", {
-    // The email cannot be null, and must be a proper email before creation
-    email: {
+    // The username cannot be null, and must be a proper username before creation
+    username: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
       validate: {
-        isEmail: true
+        isUsername: true
       }
     },
     // The password cannot be null

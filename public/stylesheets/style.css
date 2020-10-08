@@ -1,4 +1,49 @@
+
+/* Signup form */
 form.signup,
 form.login {
   margin-top: 50px;
 }
+
+/* Background */
+body {
+  background-color: #F2F1F1;
+}
+
+/* Main Banner */
+.main-banner{
+  color: white;
+  background:linear-gradient(60deg, #009AC2 0.39%, #29CA85 100%);
+  border-radius: 0px;
+  height: 80px;
+  white-space: nowrap;
+}
+
+.navbar a:hover {
+  color: white !important;
+}
+
+.banner-icon{
+  width: 32px;
+  height: 32px;
+  margin-left: 20px;
+}
+
+.navbar-default .navbar-brand{
+  color: white;
+}
+
+
+.logotype{
+  color: white;
+  font-size: 32px;
+  font-family: 'Pacifico', cursive;
+}
+
+
+
+
+.navbar-toggle {
+    z-index:3;
+}
+
