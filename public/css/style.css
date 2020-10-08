@@ -1,0 +1,11 @@
+.main-banner{
+    color: white;
+    background:linear-gradient(60deg, #009AC2 0.39%, #29CA85 100%);
+    border-radius: 0px;
+    height: 80px;
+}
+
+.banner-icon{
+    width: 32px;
+    height: 32px;
+}
