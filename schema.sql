@@ -1,4 +1,6 @@
--- Drops the blogger if it exists currently --
-DROP DATABASE IF EXISTS blogger;
--- Creates the "blogger" database --
-CREATE DATABASE blogger;
+-- drops database if exists --
+DROP DATABASE IF EXISTS hashbrag;
+
+--creates database--
+CREATE DATABASE hashbrag;
+
