@@ -2,14 +2,17 @@
 <html lang="en">
 
 <head>
-  <title>Emoji Status</title>
+  <title>#Hashbrag</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 
-  <!-- Import Google font -->
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <!-- Import Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
 
   <!-- Import Stylesheet -->
   <link href="stylesheets/style.css" rel="stylesheet">
@@ -18,31 +21,104 @@
 <body>
 
   <!-- Header banner -->
-<div class="d-flex flex-row justify-content-around main-banner align-items-center">
-  <div class="mr-auto pl-4">
-    <a href="/post"><img src="img/plus_white.png" class="banner-icon"></a>
+  <div class="d-flex flex-row justify-content-around main-banner align-items-center">
+    <div class="mr-auto pl-4">
+      <a href="/post"><img src="img/plus_white.png" class="banner-icon"></a>
+    </div>
+
+    <div>
+      <a class="logotype" href="#">#Hashbrag</a>
+    </div>
+
+    <div class="ml-auto pr-4">
+      <a href="/logout">Logout</a>
+    </div>
   </div>
-
-  <div>
-    <a class="logotype" href="#">#Hashbrag</a>
-  </div>
-
-  <div class="ml-auto pr-4">
-    <a href="/logout">Logout</a>
-  </div>
-</div>
-
-
-
-
-
 
   <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3">
-        <h2>Welcome <span class="member-name"></span></h2>
+
+    <!-- Activity Card -->
+    <div class="card mx-auto m-4 pb-2 activity-card">
+      <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <div>
+            <h6 class="card-subtitle mb-2 author-name" id="authorName">Marlon Pacheco</h6>
+            <h3 class="card-title activity-label">#hiking</h3>
+            <p class="card-text time-">Today at 5:00PM</p>
+            <div class="d-flex align-items-center">
+              <div class="like-btn mr-2"><img src="img/heart-solid.png" alt="Like"></div>
+              <div id="likesCount">7</div>
+            </div>
+          </div>
+          <div class="emoji">
+            &#129406;
+          </div>
+        </div>
       </div>
     </div>
+
+    <!-- Activity Card -->
+    <div class="card mx-auto m-4 pb-2 activity-card">
+      <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <div>
+            <h6 class="card-subtitle mb-2 author-name" id="authorName">Amy Keneson</h6>
+            <h3 class="card-title activity-label">#beach</h3>
+            <p class="card-text time-">Today at 2:37PM</p>
+            <div class="d-flex align-items-center">
+              <div class="like-btn mr-2"><img src="img/heart-hollow.png" alt="Like"></div>
+              <div id="likesCount">7</div>
+            </div>
+          </div>
+          <div class="emoji">
+            &#127958;&#65039;
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Activity Card -->
+    <div class="card mx-auto m-4 pb-2 activity-card">
+      <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <div>
+            <h6 class="card-subtitle mb-2 author-name" id="authorName">Paul Jackson</h6>
+            <h3 class="card-title activity-label">#biking</h3>
+            <p class="card-text time-">Today at 1:45PM</p>
+            <div class="d-flex align-items-center">
+              <div class="like-btn mr-2"><img src="img/heart-hollow.png" alt="Like"></div>
+              <div id="likesCount">7</div>
+            </div>
+          </div>
+          <div class="emoji">
+            &#128690;
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <!-- Activity Card -->
+        <div class="card mx-auto m-4 pb-2 activity-card">
+          <div class="card-body">
+            <div class="d-flex justify-content-between">
+              <div>
+                <h6 class="card-subtitle mb-2 author-name" id="authorName">Andrew Freire</h6>
+                <h3 class="card-title activity-label">#coffee</h3>
+                <p class="card-text time-">Today at 1:15PM</p>
+                <div class="d-flex align-items-center">
+                  <div class="like-btn mr-2"><img src="img/heart-hollow.png" alt="Like"></div>
+                  <div id="likesCount">7</div>
+                </div>
+              </div>
+              <div class="emoji">
+                &#x2615;
+              </div>
+            </div>
+          </div>
+        </div>
+    
+
+
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

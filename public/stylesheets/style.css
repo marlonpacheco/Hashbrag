@@ -5,6 +5,27 @@ form.login {
   margin-top: 50px;
 }
 
+/* Typography */
+p{
+  font-family: 'Roboto', sans-serif;
+}
+
+.author-name{
+  font-weight: 400;
+  color: #009AC2;
+
+}
+
+.activity-label{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.time-label{
+  font-weight: 300;
+  color: #7a8594;
+}
+
 /* Background */
 body {
   background-color: #F2F1F1;
@@ -16,6 +37,7 @@ body {
   background:linear-gradient(60deg, #009AC2 0.39%, #29CA85 100%);
   border-radius: 0px;
   height: 80px;
+  
 }
 
 .main-banner a,
@@ -37,8 +59,29 @@ body {
 .logotype{
   color: white;
   font-size: 32px;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Galada', cursive;
 }
 
+/* Activity Cards */
+.activity-card{
+  border-radius: 16px;
+  padding: 2%;
+  width: 80%;
+  box-shadow: 0px 10px 18px rgba(0, 12, 24, 0.1);
+  border: none;
+
+}
+
+/* Emoji */
+
+.emoji{
+  font-size: 72px;
+}
+
+/* Like Buttons */
+.like-btn img{
+  width: 24px;
+  height: 22px;
+}
 
 
