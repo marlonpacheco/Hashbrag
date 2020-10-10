@@ -21,12 +21,15 @@ module.exports = function(app) {
     db.User.create({
       username: req.body.username,
       password: req.body.password
+      
     })
       .then(() => {
         res.redirect(307, "/api/login");
       })
       .catch(err => {
-        res.status(401).json(err);
+        console.log(err)
+        res.send(err)
+        // res.status(401).json(err);
       });
   });
 
@@ -50,4 +53,18 @@ module.exports = function(app) {
       });
     }
   });
+
+  // Posts section
+  // Creating posts
+  // app.post("/api/post", (req, res) => {
+  //   db.Posts.create({
+  //     user: req.body.username,
+  //     activity: req.body.activity,
+      
+  //   })
+  //     .then(() => {
+  //       res.redirect(307, "/api/login");
+  //     })
+  // });
+
 };
