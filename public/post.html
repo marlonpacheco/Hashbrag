@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>#Hashbrag</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+  <!-- Import Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+  <!-- Import Stylesheet -->
+  <link href="stylesheets/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- Header banner -->
+
+  <div class="d-flex flex-row justify-content-around main-banner align-items-center">
+    <div class="mr-auto pl-4">
+      <a href="/feed"><img src="img/Back_White.png" class="banner-icon"></a>
+    </div>
+
+    <div>
+      <a class="logotype" href="#">#Hashbrag</a>
+    </div>
+
+    <div class="ml-auto pr-4">
+      <a href="/logout">Logout</a>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- New Post-->
+    <div class="card mx-auto w-75 m-4 pb-2 activity-card">
+      <div class="card-body text-center">
+          <p>Hi Marlon,</p>
+          <h4 class="mb-4">What are you up to?</h4>
+          <select class="form-control w-75 mb-3 mx-auto">
+            <option value="acting">#acting</option>
+            <option value="each">#beach</option>
+            <option value="biking">#biking</option>
+            <option value="coding">#coding</option>
+            <option value="coffee">#coffee</option>
+            <option value="driving">#driving</option>
+            <option value="fishing">#fishing</option>
+            <option value="golfing">#golfing</option>
+            <option value="hiking">#hiking</option>
+            <option value="shopping">#shopping</option>
+            <option value="skiing">#skiing</option>
+            <option value="snowboarding">#snowboarding</option>
+        </select>
+        <div class="d-flex flex-column align-items-center">
+            <button type="button" class="btn-lg btn-solid m-2 col-12">Post</button>
+            <button type="button" class="btn-lg btn-hollow m-2 col-12">Cancel</button>
+        </div>
+
+        
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/feed.js"></script>
+
+</body>
+
+</html>
