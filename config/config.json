@@ -1,14 +1,14 @@
 {
   "development": {
     "username": "root",
-    "password": "rootpass",
+    "password": "",
     "database": "hashbrag",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "1234",
+    "password": "",
     "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
