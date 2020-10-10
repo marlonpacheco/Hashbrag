@@ -22,13 +22,8 @@ $(document).ready(() => {
     passwordInput.val("");
   });
 
-<<<<<<< HEAD
-  // loginUser does a post to our "api/login" route and if successful, redirects us the the feed page
-  function loginUser(email, password) {
-=======
   // loginUser does a post to our "api/login" route and if successful, redirects us the the members page
   function loginUser(username, password) {
->>>>>>> 309080c8ae116ae40fa733bbec9fd1e83518628a
     $.post("/api/login", {
       username: username,
       password: password
