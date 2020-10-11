@@ -26,4 +26,14 @@ module.exports = function(app) {
   app.get("/feed", isAuthenticated, (req, res) => {
     res.sendFile(path.join(__dirname, "../public/feed.html"));
   });
+
+  // HTML Route for Posts page
+  app.get("/post", (req, res) => {
+    // If the user already has an account send them to the post page
+    if (req.user) {
+      res.sendFile(path.join(__dirname, "../public/post.html"));
+    }
+    res.sendFile(path.join(__dirname, "../public/signup.html"));
+  });
+
 };
