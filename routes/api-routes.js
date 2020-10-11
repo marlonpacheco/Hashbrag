@@ -57,17 +57,14 @@ module.exports = function (app) {
   // Posts section
   // Creating posts
   app.post("/api/post", (req, res) => {
-    db.Post.create({
-      // user: req.body.username,
-      // activity: req.body.activity,
-      user: req.body.user,
+    db.Posts.create({
+      username: req.body.username,
       activity: req.body.activity,
-      emoji: req.body.emoji,
-      likes: req.body.likes
+      
     })
-    .then(() => {
-      res.redirect(307, '/feed');
-    })
+      .then(() => {
+        res.redirect(307, "/api/login");
+      })
   });
 
 };
