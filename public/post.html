@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
 
   <!-- Import Google fonts -->
@@ -41,6 +41,7 @@
     <!-- New Post-->
     <div class="card mx-auto w-75 m-4 pb-2 activity-card">
       <div class="card-body text-center">
+        <form class="create-post">
           <p>Hi Marlon,</p>
           <h4 class="mb-4">What are you up to?</h4>
           <select class="form-control w-75 mb-3 mx-auto">
@@ -56,20 +57,22 @@
             <option value="shopping">#shopping</option>
             <option value="skiing">#skiing</option>
             <option value="snowboarding">#snowboarding</option>
-        </select>
-        <div class="d-flex flex-column align-items-center"></div>
-          <a class="btn btn-lg btn-solid m-2 col-12" href="#" role="button">Post</a>
+          </select>
+          <div class="d-flex flex-column align-items-center"></div>
+          <button class="btn btn-lg btn-solid m-2 col-12" type="submit">Post</button>
           <a class="btn btn-lg btn-hollow m-2 col-12" href="/feed" role="button">Cancel</a>
-        </div>
 
+        </form>
       </div>
+
     </div>
+  </div>
 
 
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/feed.js"></script>
+  <script type="text/javascript" src="js/post.js"></script>
 
 </body>
 
