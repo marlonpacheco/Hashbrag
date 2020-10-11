@@ -28,12 +28,9 @@ module.exports = function(app) {
   });
 
   // HTML Route for Posts page
-  app.get("/post", (req, res) => {
-    // If the user already has an account send them to the post page
-    if (req.user) {
-      res.sendFile(path.join(__dirname, "../public/post.html"));
-    }
-    res.sendFile(path.join(__dirname, "../public/signup.html"));
+
+  app.get("/post", isAuthenticated, (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/post.html"));
   });
 
 };
