@@ -2,8 +2,4 @@ node_modules/
 package-lock.json
 .env
 .DS_Store
-<<<<<<< HEAD
-
-=======
 package.json
->>>>>>> fea57c0ae9122c0ca7d7c88d9f056068112c787a
