@@ -1,27 +1,24 @@
 $(function() {
 
+  var activityInput = $("#activity");
+
     $(".create-post").on("submit", function(event) {
         // Make sure to preventDefault on a submit event.
         event.preventDefault();
     
+        // Create a new post from the inputs on the page
         var newPost = {
-            user: "This user (Test)",
-            activity: "Test Activity",
-            emoji: "Test Emoji",
-            likes: 0
+          activity: activityInput.val(),
+          emoji: "Placeholder",
+          UserUsername: "andrew.m.freire@gmail.com"
         };
     
         // Send the POST request.
-        $.ajax("/api/post", {
-          type: "POST",
-          data: newPost
-        }).then(
-          function() {
-            console.log("created new post");
-            // // Reload the page to get the updated list
-            location.replace = "/feed";
-          }
-        );
+
+        $.post("/api/posts", newPost, function() {
+          window.location.href = "/feed";
+        });
+  
       });
 
 });
