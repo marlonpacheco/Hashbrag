@@ -41,9 +41,10 @@
     <!-- New Post-->
     <div class="card mx-auto w-75 m-4 pb-2 activity-card">
       <div class="card-body text-center">
+        <form class="create-post">
           <p>Hi Marlon,</p>
           <h4 class="mb-4">What are you up to?</h4>
-          <select class="form-control w-75 mb-3 mx-auto">
+          <select id="activity" class="form-control w-75 mb-3 mx-auto">
             <option value="acting">#acting</option>
             <option value="each">#beach</option>
             <option value="biking">#biking</option>
@@ -56,21 +57,22 @@
             <option value="shopping">#shopping</option>
             <option value="skiing">#skiing</option>
             <option value="snowboarding">#snowboarding</option>
-        </select>
-        <div class="d-flex flex-column align-items-center">
-            <button type="button" class="btn-lg btn-solid m-2 col-12">Post</button>
-            <button type="button" class="btn-lg btn-hollow m-2 col-12">Cancel</button>
-        </div>
+          </select>
+          <div class="d-flex flex-column align-items-center"></div>
+          <button class="btn btn-lg btn-solid m-2 col-12" type="submit">Post</button>
+          <a class="btn btn-lg btn-hollow m-2 col-12" href="/feed" role="button">Cancel</a>
 
-        
+        </form>
       </div>
+
     </div>
+  </div>
 
 
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/feed.js"></script>
+  <script type="text/javascript" src="js/post.js"></script>
 
 </body>
 

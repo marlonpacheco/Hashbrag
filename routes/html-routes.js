@@ -26,4 +26,11 @@ module.exports = function(app) {
   app.get("/feed", isAuthenticated, (req, res) => {
     res.sendFile(path.join(__dirname, "../public/feed.html"));
   });
+
+  // HTML Route for Posts page
+
+  app.get("/post", isAuthenticated, (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/post.html"));
+  });
+
 };
