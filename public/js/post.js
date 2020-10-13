@@ -8,8 +8,7 @@ $(function() {
     
         // Create a new post from the inputs on the page
         var newPost = {
-          activity: activityInput.val(),
-          UserUsername: "admin"
+          activity: activityInput.val()
         };
     
         // Send the POST request.
