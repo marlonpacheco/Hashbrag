@@ -9,8 +9,7 @@ $(function() {
         // Create a new post from the inputs on the page
         var newPost = {
           activity: activityInput.val(),
-          emoji: "Placeholder",
-          UserUsername: "andrew.m.freire@gmail.com"
+          UserUsername: "admin"
         };
     
         // Send the POST request.
