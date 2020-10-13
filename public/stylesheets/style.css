@@ -100,6 +100,11 @@ body {
   border: none;
 }
 
+.btn-solid:hover {
+  color: #fff !important;
+  text-decoration: none;
+}
+
 .btn-hollow{
   color: rgba(0, 198, 187, 1);
 
@@ -108,4 +113,9 @@ body {
   border:rgba(0, 198, 187, 1) 2px solid;
   width: 75%;
   max-width: 320px;
+}
+
+.btn-hollow:hover {
+  color: rgb(0, 198, 188) !important;
+  text-decoration: none;
 }
