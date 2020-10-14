@@ -8,7 +8,7 @@
   ## Description
   This is the latest and greatest social media application to brag and update your friends and family what your currently up to! 
 
-  ![Image of #HashBrag](http://unlicense.org/)
+  ![Image of #HashBrag](https://github.com/marlonpacheco/Project-2/blob/main/public/img/Screen%20Shot%202020-10-12%20at%207.20.12%20PM.png?raw=true)
   
   ---
   ## Table of Contents
@@ -23,13 +23,14 @@
  ---
  ## Features
   \*Personalized login
+
   \*Likable post
 
   ## Usage
   Simply make a login and start updating!
 
   ## License
-  #Hashbrag is Unlicense
+  #Hashbrag is unlicensed
 
   ## Contributing
   We are currently taking contributions and we appreciate your ongoing support!
