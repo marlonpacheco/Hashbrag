@@ -45,7 +45,6 @@
 
   ## Questions
   For questions regarding this application, please email: 
-  #hashbrag@gmail.com
 
 
 
