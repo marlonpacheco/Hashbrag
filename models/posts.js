@@ -2,10 +2,6 @@
 
 module.exports = function (sequelize, DataTypes) {
     const Post = sequelize.define("Post", {
-        activity: {
-            type: DataTypes.STRING,
-            allowNull: false,
-        },
         likes: {
             type: DataTypes.INTEGER,
         }
