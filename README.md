@@ -8,8 +8,8 @@
   ## Description
   This is the latest and greatest social media application to brag and update your friends and family what your currently up to! 
 
-  ![Image of #HashBrag](http://unlicense.org/)
-  
+  ![](/public/img/ScreenShot.png)
+
   ---
   ## Table of Contents
 
