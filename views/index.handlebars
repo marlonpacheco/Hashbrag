@@ -1,3 +1,20 @@
-{{!-- {{#each username}}
-{{Post}}
-{{likes}} --}}
+  <div class="container">
+    <!-- Activity Card -->
+    <div class="card mx-auto m-4 pb-2 activity-card">
+      <div class="card-body">
+        <div class="d-flex justify-content-between">
+          <div>
+            <h6 class="card-subtitle mb-2 author-name" id="authorName">{{username}}</h6>
+            <h3 class="card-title activity-label">{{actvity}}</h3>
+            <p class="card-text time-">{{timeanddate}}</p>
+            <div class="d-flex align-items-center">
+              <div class="like-btn mr-2"><img src="img/heart-solid.png" alt="Like"></div>
+              <div id="likesCount">{{likes}}</div>
+            </div>
+          </div>
+          <div class="emoji">
+            {{emoji}};
+          </div>
+        </div>
+      </div>
+    </div>
