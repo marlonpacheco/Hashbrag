@@ -65,8 +65,9 @@ module.exports = function (app) {
   // });
   // Creating posts
   app.post("/api/posts", function(req, res) {
+    console.log(req.body)
     db.Post.create({
-      activity: req.body.activity,
+      ActivityName: req.body.activity,
       UserUsername: req.user.username
     }).then(function(dbPost) {
       res.json(dbPost);

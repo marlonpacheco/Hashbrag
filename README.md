@@ -8,8 +8,13 @@
   ## Description
   This is the latest and greatest social media application to brag and update your friends and family what your currently up to! 
 
+<<<<<<< HEAD
   ![Image of #HashBrag](https://github.com/marlonpacheco/Project-2/blob/main/public/img/Screen%20Shot%202020-10-12%20at%207.20.12%20PM.png?raw=true)
   
+=======
+  ![](/public/img/ScreenShot.png)
+
+>>>>>>> 95bb53b05597687bc8ccad754cc33a71590d6d71
   ---
   ## Table of Contents
 
