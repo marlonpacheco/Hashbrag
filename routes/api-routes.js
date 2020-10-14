@@ -55,9 +55,21 @@ module.exports = function (app) {
   });
 
   // Posts section
+
+  // app.post('/login',
+  // passport.authenticate('local'),
+  // function(req, res) {
+  //   // If this function gets called, authentication was successful.
+  //   // `req.user` contains the authenticated user.
+  //   res.redirect('/users/' + req.user.username);
+  // });
   // Creating posts
   app.post("/api/posts", function(req, res) {
-    db.Post.create(req.body).then(function(dbPost) {
+    console.log(req.body)
+    db.Post.create({
+      ActivityName: req.body.activity,
+      UserUsername: req.user.username
+    }).then(function(dbPost) {
       res.json(dbPost);
     });
   });

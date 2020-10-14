@@ -6,6 +6,7 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false,
             unique: true,
+            primaryKey: true,
         },
         emoji: {
             type: DataTypes.TEXT,
