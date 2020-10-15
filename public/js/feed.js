@@ -40,7 +40,7 @@ $(document).ready(() => {
             </div>
           </div>
           <div class="emoji">
-            &#129406;
+          &#9975;
           </div>
         </div>
       </div>
