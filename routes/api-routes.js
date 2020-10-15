@@ -56,6 +56,14 @@ module.exports = function (app) {
 
   // Posts section
 
+  // Get all the posts
+  app.get("/api/posts", function(req, res){
+    db.Post.findAll({}).then(function(posts){
+      console.log(posts);
+      res.json(posts);
+    });
+  });
+
   // app.post('/login',
   // passport.authenticate('local'),
   // function(req, res) {
@@ -63,6 +71,8 @@ module.exports = function (app) {
   //   // `req.user` contains the authenticated user.
   //   res.redirect('/users/' + req.user.username);
   // });
+
+
   // Creating posts
   app.post("/api/posts", function(req, res) {
     console.log(req.body)
