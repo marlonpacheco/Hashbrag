@@ -29,18 +29,20 @@ $(document).ready(() => {
 
       var postDiv = $("<div>");
 
+      var postTime = moment(posts[i].createdAt).calendar();
+
       postDiv.html(`<div class="card mx-auto m-4 pb-2 activity-card">
       <div class="card-body">
         <div class="d-flex justify-content-between">
           <div>
             <h6 class="card-subtitle mb-2 author-name" id="authorName">${posts[i].UserUsername}</h6>
             <h3 class="card-title activity-label">${posts[i].ActivityName}</h3>
-            <p class="card-text time-">Today at 5:00PM</p>
+            <p class="card-text time-">${postTime}</p>
             <div class="d-flex align-items-center">
             </div>
           </div>
           <div class="emoji">
-            &#129406;
+          ${posts[i].Activity.emoji};
           </div>
         </div>
       </div>
