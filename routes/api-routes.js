@@ -58,7 +58,9 @@ module.exports = function (app) {
 
   // Get all the posts
   app.get("/api/posts", function(req, res){
-    db.Post.findAll({}).then(function(posts){
+    db.Post.findAll({
+      include: [db.Activity]
+    }).then(function(posts){
       console.log(posts);
       res.json(posts);
     });
