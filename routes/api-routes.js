@@ -61,7 +61,7 @@ module.exports = function (app) {
     db.Post.findAll({
       include: [db.Activity]
     }).then(function(posts){
-      console.log(posts);
+      // console.log(posts);
       res.json(posts);
     });
   });
@@ -77,7 +77,7 @@ module.exports = function (app) {
 
   // Creating posts
   app.post("/api/posts", function(req, res) {
-    console.log(req.body)
+    // console.log(req.body)
     db.Post.create({
       ActivityName: req.body.activity,
       UserUsername: req.user.username
