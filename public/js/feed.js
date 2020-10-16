@@ -10,7 +10,7 @@ $(document).ready(() => {
   var postsContainer = $("#posts-container");
 
   // TODO: Get all the posts
-  $.get("/api/posts", function(data) {
+  $.get("/api/posts", function (data) {
     console.log("Posts:", data);
     posts = data;
     if (!posts || !posts.length) {
@@ -21,11 +21,11 @@ $(document).ready(() => {
     }
   });
 
-  function renderPosts(){
+  function renderPosts() {
 
     postsContainer.empty();
 
-    for (var i = posts.length - 1; i >= 0; i--){
+    for (var i = posts.length - 1; i >= 0; i--) {
 
       var postDiv = $("<div>");
 
@@ -35,7 +35,7 @@ $(document).ready(() => {
       <div class="card-body">
         <div class="d-flex justify-content-between">
           <div>
-            <h6 class="card-subtitle mb-2 author-name" id="authorName">${posts[i].UserUsername}</h6>
+            <h5 class="card-subtitle mb-2 author-name" id="authorName">${posts[i].UserUsername}</h5>
             <h3 class="card-title activity-label">${posts[i].ActivityName}</h3>
             <p class="card-text time-">${postTime}</p>
             <div class="d-flex align-items-center">
@@ -48,7 +48,7 @@ $(document).ready(() => {
       </div>
     </div>`);
 
-    postsContainer.append(postDiv);
+      postsContainer.append(postDiv);
     }
 
 

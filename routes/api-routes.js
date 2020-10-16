@@ -10,7 +10,7 @@ module.exports = function (app) {
     // Sending back a password, even a hashed password, isn't a good idea
     res.json({
       username: req.user.username,
-      id: req.user.id
+      id: req.user.id,
     });
   });
 
@@ -20,7 +20,8 @@ module.exports = function (app) {
   app.post("/api/signup", (req, res) => {
     db.User.create({
       username: req.body.username,
-      password: req.body.password
+      password: req.body.password,
+      alias: req.body.alias,
 
     })
       .then(() => {
@@ -49,6 +50,7 @@ module.exports = function (app) {
       // Sending back a password, even a hashed password, isn't a good idea
       res.json({
         username: req.user.username,
+        alias: req.user.alias,
         id: req.user.id
       });
     }
@@ -59,7 +61,7 @@ module.exports = function (app) {
   // Get all the posts
   app.get("/api/posts", function(req, res){
     db.Post.findAll({
-      include: [db.Activity]
+      include: [db.Activity],
     }).then(function(posts){
       console.log(posts);
       res.json(posts);

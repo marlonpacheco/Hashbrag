@@ -12,7 +12,7 @@ module.exports = function(sequelize, DataTypes) {
       unique: true,
     },
 
-    realName: {
+    alias: {
       type: DataTypes.STRING,
       allowNull: true,
     },

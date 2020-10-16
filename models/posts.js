@@ -4,6 +4,9 @@ module.exports = function (sequelize, DataTypes) {
     const Post = sequelize.define("Post", {
         likes: {
             type: DataTypes.INTEGER,
+        },
+        comments:{
+            type: DataTypes.TEXT,
         }
     });
 
