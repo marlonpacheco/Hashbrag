@@ -35,12 +35,14 @@
     <div class="ml-auto pr-4">
       <a href="/logout">Logout</a>
     </div>
+    <canvas id="canvas-basic"></canvas>
   </div>
 
   <div class="container" id="posts-container">
 
     <!-- Activity Card -->
-    <div class="card mx-auto m-4 pb-2 activity-card">
+
+    <!-- <div class="card mx-auto m-4 pb-2 activity-card">
       <div class="card-body">
         <div class="d-flex justify-content-between">
           <div>
@@ -57,75 +59,19 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <!-- Activity Card -->
-    <div class="card mx-auto m-4 pb-2 activity-card">
-      <div class="card-body">
-        <div class="d-flex justify-content-between">
-          <div>
-            <h6 class="card-subtitle mb-2 author-name" id="authorName">Amy Keneson</h6>
-            <h3 class="card-title activity-label">#beach</h3>
-            <p class="card-text time-">Today at 2:37PM</p>
-            <div class="d-flex align-items-center">
-              <div class="like-btn mr-2"><img src="img/heart-hollow.png" alt="Like"></div>
-              <div id="likesCount">7</div>
-            </div>
-          </div>
-          <div class="emoji">
-            &#127958;&#65039;
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Activity Card -->
-    <div class="card mx-auto m-4 pb-2 activity-card">
-      <div class="card-body">
-        <div class="d-flex justify-content-between">
-          <div>
-            <h6 class="card-subtitle mb-2 author-name" id="authorName">Paul Jackson</h6>
-            <h3 class="card-title activity-label">#biking</h3>
-            <p class="card-text time-">Today at 1:45PM</p>
-            <div class="d-flex align-items-center">
-              <div class="like-btn mr-2"><img src="img/heart-hollow.png" alt="Like"></div>
-              <div id="likesCount">7</div>
-            </div>
-          </div>
-          <div class="emoji">
-            &#128690;
-          </div>
-        </div>
-      </div>
-    </div>
-
-        <!-- Activity Card -->
-        <div class="card mx-auto m-4 pb-2 activity-card">
-          <div class="card-body">
-            <div class="d-flex justify-content-between">
-              <div>
-                <h6 class="card-subtitle mb-2 author-name" id="authorName">Andrew Freire</h6>
-                <h3 class="card-title activity-label">#coffee</h3>
-                <p class="card-text time-">Today at 1:15PM</p>
-                <div class="d-flex align-items-center">
-                  <div class="like-btn mr-2"><img src="img/heart-hollow.png" alt="Like"></div>
-                  <div id="likesCount">7</div>
-                </div>
-              </div>
-              <div class="emoji">
-                &#x2615;
-              </div>
-            </div>
-          </div>
-        </div>
-    
+    <h4 class="text-center text-muted mt-5">No posts to show yet.</h4>
 
 
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/granim/2.0.0/granim.min.js"></script>
+  
   <script type="text/javascript" src="js/feed.js"></script>
+  <script type="text/javascript" src="js/gradientbanner.js"></script>
 
 </body>
 

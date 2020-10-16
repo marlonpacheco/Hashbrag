@@ -11,7 +11,7 @@ $(document).ready(() => {
 
   // TODO: Get all the posts
   $.get("/api/posts", function(data) {
-    console.log("Posts:", data);
+    // console.log("Posts:", data);
     posts = data;
     if (!posts || !posts.length) {
       // Do nothing

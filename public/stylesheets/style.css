@@ -34,10 +34,22 @@ body {
 /* Main Banner */
 .main-banner{
   color: white;
-  background:linear-gradient(60deg, #009AC2 0.39%, #29CA85 100%);
+  /* background:linear-gradient(60deg, #009AC2 0.39%, #29CA85 100%); */
   border-radius: 0px;
   height: 80px;
   
+}
+
+.main-banner canvas{
+  height: 80px;
+}
+
+#canvas-basic {
+  position: absolute;
+  display: block;
+  width: 100%;
+  z-index: -1;
+  box-shadow: 0px 10px 18px rgba(0, 12, 24, 0.1);;
 }
 
 .main-banner a,
@@ -60,6 +72,7 @@ body {
   color: white;
   font-size: 32px;
   font-family: 'Galada', cursive;
+  text-shadow: 0px 2px 1px rgba(0,0,0,0.2);
 }
 
 /* Activity Cards */
