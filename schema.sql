@@ -1,6 +1,6 @@
 -- drops database if exists --
 DROP DATABASE IF EXISTS hashbrag;
 
---creates database--
+-- creates database--
 CREATE DATABASE hashbrag;
 
