@@ -35,7 +35,7 @@
   We are currently taking contributions and we appreciate your ongoing support!
 
   ## Link to Deployed Application
-  Link here
+  https://hashbrag.herokuapp.com/ 
 
   ## Team Members
   Andrew
